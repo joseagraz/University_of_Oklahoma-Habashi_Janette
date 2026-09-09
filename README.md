@@ -70,23 +70,9 @@ Set `FILE_NAME`, `FILE_PATH`, and `MODEL_API_KEY`, then run:
 python Muse_Voice_Transcribe.py
 ```
 
-### Specify a recording at runtime
-
-```bash
-python Muse_Voice_Transcribe.py /path/to/recording.mp3
-```
-
-Quote paths containing spaces:
-
-```bash
-python Muse_Voice_Transcribe.py "/path/to/interview recording.m4a"
-```
-
-The runtime path overrides the configured input path. The program accepts no more than one command-line argument.
-
 ## Processing workflow
 
-1. Validate the Python version, input file, API key, FFmpeg installation, and request settings.
+1. Validate input file, API key, FFmpeg installation, and request settings.
 2. Generate a processing ID from the recording content and transcript-related settings.
 3. Convert and split the source audio into temporary WAV chunks.
 4. Reuse an existing chunk response only if its JSON passes schema validation.
@@ -226,30 +212,4 @@ Before processing research, participant, student, patient, or other sensitive re
 - Restrict access to the source audio and all transcript files.
 - Remove or rotate embedded credentials before distributing the script.
 
-## Suggested module documentation
 
-The following compact docstring can replace or standardize the header at the top of the Python file:
-
-```python
-"""Transcribe an audio recording with Meta Muse Voice Transcribe.
-
-The program converts the source to mono, 16 kHz PCM WAV, divides it into
-nine-minute chunks, submits each chunk separately, validates and caches
-successful responses, and writes combined text and JSON outputs.
-
-Usage:
-    python Muse_Voice_Transcribe.py [AUDIO_FILE]
-
-Requirements:
-    Python 3.10+, requests, FFmpeg, and a valid Muse API key.
-
-Important:
-    Speaker labels are local to each chunk/session and do not represent
-    recording-wide speaker identities. Do not distribute this script while
-    it contains an active API key.
-"""
-```
-
-## Implementation scope
-
-This README documents behavior verified directly from `Muse_Voice_Transcribe.py` version 1.2.0. Statements about service limits are identified as assumptions encoded by the script because the official Muse reference requires authenticated access and may change.
