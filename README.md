@@ -35,20 +35,7 @@ The combined JSON preserves `sessionId`, `chunkIndex`, and `speakerKey` so local
 Install the dependencies with Conda:
 
 ```bash
-conda install requests
-conda install -c conda-forge ffmpeg
-```
-
-Alternatively, install `requests` with pip:
-
-```bash
-python -m pip install requests
-```
-
-Confirm that FFmpeg is available:
-
-```bash
-ffmpeg -version
+conda install -c conda-forge ffmpeg requests
 ```
 
 ## Configuration
