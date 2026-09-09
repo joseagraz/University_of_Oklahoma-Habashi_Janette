@@ -8,8 +8,6 @@
 | Script | `Muse_Voice_Transcribe.py` |
 | Version | 1.2.0 |
 | Author | Jose L. Agraz, PhD |
-| Date | September 9, 2026 |
-| Runtime | Python 3.10 or newer |
 
 ## Description
 
