@@ -26,7 +26,7 @@ The combined JSON preserves `sessionId`, `chunkIndex`, and `speakerKey` so local
 ## Requirements
 
 - Python 3.10 or newer
-- [`requests`](https://requests.readthedocs.io/) Python package
+- [requests](https://requests.readthedocs.io/) Python package
 - [FFmpeg](https://ffmpeg.org/) available on `PATH`
 - A valid Muse API key
 - Network access to the configured Muse endpoint
