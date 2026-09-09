@@ -54,7 +54,7 @@ Edit the constants near the beginning of the script:
 | `CHUNK_SECONDS` | Chunk length; must be an integer from 1 through 599 |
 | `MAX_ATTEMPTS` | Maximum attempts for each API request |
 
-The current script uses `DIARIZATION` mode and a chunk duration of 540 seconds.
+The current script uses `DIARIZATION` (best for interviews) mode and a chunk duration of 540 seconds.
 
 ### API-key security
 
@@ -203,13 +203,5 @@ This is expected because each chunk creates a separate Muse session. Use `sessio
 - Output files may contain sensitive speech and are not encrypted by the script.
 - The API interface and limits can change independently of this program.
 
-## Data-handling guidance
-
-Before processing research, participant, student, patient, or other sensitive recordings:
-
-- Confirm that the external service is approved for the data classification.
-- Follow applicable consent, institutional, retention, and access-control requirements.
-- Restrict access to the source audio and all transcript files.
-- Remove or rotate embedded credentials before distributing the script.
 
 
