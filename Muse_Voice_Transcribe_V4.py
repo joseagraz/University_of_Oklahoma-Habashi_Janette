@@ -98,7 +98,7 @@ FILE_PATH = Path("/home/jagraz/Downloads/Habashi/Precondition_Audio/07.04.22.Abd
 INPUT_AUDIO_FILE = FILE_PATH / FILE_NAME
 API_URL = "https://api.meta.ai/v1/asr/transcribe"
 # Paste your own key between the quotation marks. Do not share this file.
-MODEL_API_KEY="LLM_1059297227105699_VPf68TbQqH91hSCBr9HfpH5NBMo" 
+MODEL_API_KEY="LLM_1059297227105699" 
 MODEL = "muse-voice-transcribe-1.0"
 TRANSCRIPTION_MODE = "DIARIZATION"
 KEYWORDS: list[str] = []
