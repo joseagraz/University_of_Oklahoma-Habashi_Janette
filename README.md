@@ -165,28 +165,6 @@ Rerunning the same recording with the same transcript-related settings reuses va
 | `0` | Every chunk was transcribed successfully |
 | `1` | Validation or audio preparation failed, or at least one chunk failed |
 
-## Troubleshooting
-
-### Audio file not found
-
-Verify `FILE_PATH` and `FILE_NAME`, or supply an existing file as the command-line argument.
-
-### FFmpeg is unavailable
-
-Install FFmpeg and confirm that `ffmpeg -version` works in the same environment used to run the script.
-
-### Audio preparation failed
-
-Confirm that the source contains an audio stream and that FFmpeg can read its format. The script selects the first audio stream.
-
-### HTTP 401 or 403
-
-Confirm that the key is active and authorized for the configured endpoint and model. These errors are not retried.
-
-### HTTP 400
-
-Review the API response printed by the script and verify the model, mode, optional request fields, and current Muse schema.
-
 ### Speaker labels change between chunks
 
 This is expected because each chunk creates a separate Muse session. Use `sessionId`, `chunkIndex`, and `speakerKey` to interpret a label within its proper scope.
