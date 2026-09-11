@@ -93,16 +93,16 @@ from typing import Any
 
 import requests
 
-FILE_NAME = "July_13_2022_SalwaJefna.mp3"
-FILE_PATH = Path("/home/jagraz/Downloads/Habashi/Precondition_Audio")
+FILE_NAME = "July4_2022_JouadAlbyra_preconditioned.wav"
+FILE_PATH = Path("/home/jagraz/Downloads/Habashi/Precondition_Audio/07.04.22.Abdel Jawad Saleh/")
 INPUT_AUDIO_FILE = FILE_PATH / FILE_NAME
 API_URL = "https://api.meta.ai/v1/asr/transcribe"
 # Paste your own key between the quotation marks. Do not share this file.
-MODEL_API_KEY="LLM_10592972271056" 
+MODEL_API_KEY="LLM_1059297227105699_VPf68TbQqH91hSCBr9HfpH5NBMo" 
 MODEL = "muse-voice-transcribe-1.0"
 TRANSCRIPTION_MODE = "DIARIZATION"
 KEYWORDS: list[str] = []
-LANGUAGE_BIAS: list[str] = []
+LANGUAGE_BIAS: list[str] = ["Arabic", "English"]
 CHUNK_SECONDS = 540  # 9 minutes
 MAX_ATTEMPTS = 4
 RETRYABLE_CODES = {429, 500, 502, 503, 504}
