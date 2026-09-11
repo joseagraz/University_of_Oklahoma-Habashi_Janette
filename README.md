@@ -174,10 +174,6 @@ This is expected because each chunk creates a separate Muse session. Use `sessio
 - Chunk boundaries can split a sentence or speech turn.
 - The script does not overlap chunks or reconcile boundary text.
 - It does not match speaker identities between chunks.
-- It does not translate, summarize, redact, or identify speakers by name.
-- Partial results may contain gaps when a chunk fails.
-- Output files may contain sensitive speech and are not encrypted by the script.
-- The API interface and limits can change independently of this program.
 
 
 
