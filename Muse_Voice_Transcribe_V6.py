@@ -1,4 +1,4 @@
-"""Transcribe an audio recording with Meta's Muse Voice Transcribe API.
+"""Transcribe an audio recording with Meta's Muse Voice Transcribe API
 
 Program metadata
 ----------------
